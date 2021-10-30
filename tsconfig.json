@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"downlevelIteration": true,
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": false,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"baseUrl": "./src",
+		"paths": {
+			"components/*": ["components/*"],
+			"config/*": ["config/*"],
+			"container/*": ["containers/*"],
+			"context/*": ["context/*"],
+			"models/*": ["models/*"]
+		},
+		"types": ["@emotion/core"]
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
+	"exclude": ["node_modules"]
+}

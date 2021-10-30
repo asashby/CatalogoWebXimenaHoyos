@@ -1,0 +1,99 @@
+@import '~react-multi-carousel/lib/styles.css';
+
+$green: #2abca4;
+$white: #fff;
+
+%arrow {
+	background: $green;
+	height: 60px;
+	width: 60px;
+	padding: 0 14px;
+	top: calc(50% - 30px);
+
+	&::before {
+		color: $white;
+		font-size: 16px;
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	&:hover {
+		background: $white;
+
+		&::before {
+			color: $green;
+		}
+	}
+}
+
+.react-multiple-carousel {
+	&__arrow--left {
+		@extend %arrow;
+		left: 0px;
+		transform: translateX(-50%);
+		text-align: right;
+	}
+
+	&__arrow--right {
+		@extend %arrow;
+		right: 0px;
+		transform: translateX(50%);
+		text-align: left;
+	}
+}
+
+.carousel {
+	position: relative;
+	height: 100%;
+
+	ul:not(.carousel__dots) {
+		height: 100%;
+	}
+
+	&--single {
+		height: 100%;
+	}
+
+	.carousel--multi {
+		margin: 0px 8px;
+	}
+
+	&__dots {
+		bottom: 14px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		button {
+			position: relative;
+			background: transparent;
+			border: 1px solid $white;
+			margin: 0 7px;
+			height: 9px;
+			opacity: 1;
+			width: 9px;
+
+			&::after {
+				border-radius: 50%;
+				// border: 1px solid $white;
+				content: '';
+				display: block;
+				height: calc(100% + 8px);
+				left: 50%;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: calc(100% + 8px);
+			}
+		}
+
+		li[class$='active'] button {
+			background-color: $white;
+
+			&::after {
+				border: 1px solid $white;
+			}
+		}
+	}
+}

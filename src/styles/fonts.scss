@@ -1,0 +1,179 @@
+$font-path: '/fonts';
+
+@font-face {
+	font-family: 'Poppins-Regular';
+	font-weight: normal;
+	src: url('#{$font-path}/Poppins-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Medium';
+	font-weight: 500;
+	src: url('#{$font-path}/Poppins-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-SemiBold';
+	font-weight: 600;
+	src: url('#{$font-path}/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Bold';
+	font-weight: bold;
+	src: url('#{$font-path}/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-ExtraBold';
+	font-weight: 800;
+	src: url('#{$font-path}/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: 'dp6WebCalPeru';
+	src: url('#{$font-path}/dp6WebCalPeru.ttf?moeqnp') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'dp6WebCalPeru' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-viajes:before {
+	content: '\e91f';
+}
+.icon-automotriz:before {
+	content: '\e920';
+}
+.icon-eduacion:before {
+	content: '\e921';
+}
+.icon-youtube:before {
+	content: '\e91d';
+}
+.icon-linkedin:before {
+	content: '\e91e';
+}
+.icon-arrow:before {
+	content: '\e900';
+}
+.icon-book:before {
+	content: '\e901';
+}
+.icon-cart:before {
+	content: '\e902';
+}
+.icon-facebook .path1:before {
+	content: '\e903';
+	color: rgb(0, 123, 255);
+}
+.icon-facebook .path2:before {
+	content: '\e904';
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon-fb:before {
+	content: '\e905';
+}
+.icon-gift:before {
+	content: '\e906';
+}
+.icon-gourmet:before {
+	content: '\e907';
+}
+.icon-gym:before {
+	content: '\e908';
+}
+.icon-heart:before {
+	content: '\e91c';
+}
+.icon-home:before {
+	content: '\e909';
+}
+.icon-instagran:before {
+	content: '\e90a';
+}
+.icon-left:before {
+	content: '\e90b';
+}
+.icon-menu:before {
+	content: '\e90c';
+}
+.icon-moda:before {
+	content: '\e90d';
+}
+.icon-pharmacy:before {
+	content: '\e90e';
+}
+.icon-phone:before {
+	content: '\e90f';
+}
+.icon-sale:before {
+	content: '\e910';
+}
+.icon-search:before {
+	content: '\e911';
+}
+.icon-sold:before {
+	content: '\e912';
+}
+.icon-star-empty:before {
+	content: '\e9d7';
+}
+.icon-star-half:before {
+	content: '\e9d8';
+}
+.icon-star-filled:before {
+	content: '\e9d9';
+}
+.icon-tech:before {
+	content: '\e913';
+}
+.icon-user:before {
+	content: '\e914';
+}
+.icon-vegetables:before {
+	content: '\e915';
+}
+.icon-view:before {
+	content: '\e916';
+}
+.icon-wsp .path1:before {
+	content: '\e917';
+	color: rgb(229, 229, 229);
+}
+.icon-wsp .path2:before {
+	content: '\e918';
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon-wsp .path3:before {
+	content: '\e919';
+	margin-left: -1em;
+	color: rgb(69, 195, 84);
+}
+.icon-wsp .path4:before {
+	content: '\e91a';
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon-wsp .path5:before {
+	content: '\e91b';
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
